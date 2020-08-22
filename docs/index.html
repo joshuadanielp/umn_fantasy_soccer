@@ -121,22 +121,22 @@ http://www.templatemo.com/tm-402-genius
                                         <div class="col-md-6 col-sm-6 col-xs-6">
                                             <div class="portfolio-item whiteback" style="margin:auto; width:100%;">
                                                 <div class="overlay">
-                                                    <a href="./images/categorical_accuracy_history.png"
+                                                    <a href="./images/dnn_loss_history.png"
                                                         data-rel="lightbox">
                                                         <i class="fa fa-expand"></i>
                                                     </a>
                                                 </div>
-                                                <img src="./images/categorical_accuracy_history.png" alt="Image 1">
+                                                <img src="./images/dnn_loss_history.png" alt="Image 1">
                                             </div> <!-- /.portfolio-item -->
                                         </div> <!-- /.col-md-4 -->
                                         <div class="col-md-6 col-sm-6 col-xs-6">
                                             <div class="portfolio-item whiteback" style="margin:auto; width:100%;">
                                                 <div class="overlay">
-                                                    <a href="./images/categorical_loss_history.png" data-rel="lightbox">
+                                                    <a href="./images/categorical_accuracy_history.png" data-rel="lightbox">
                                                         <i class="fa fa-expand"></i>
                                                     </a>
                                                 </div>
-                                                <img src="./images/categorical_loss_history.png" alt="Image 2">
+                                                <img src="./images/dnn_accuracy_history.png" alt="Image 2">
                                             </div> <!-- /.portfolio-item -->
                                         </div> <!-- /.col-md-4 -->
                                     </div> <!-- /.row -->
@@ -150,11 +150,11 @@ http://www.templatemo.com/tm-402-genius
                                                         <div class="icon">
                                                             <!-- <i class="fa fa-heart-o"></i> -->
                                                         </div>
-                                                        <h4 class="service-title">Categorical Accuracy History</h4>
+                                                        <h4 class="service-title">DNN Training History</h4>
                                                     </div>
                                                 </div>
-                                                <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                    Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.
+                                                <div class="body">DNN Model's loss function is mean_squared_error.
+                                                    The training progresses about 20 epochs and then validation loss flattens out.
                                                 </div>
                                             </div>
                                         </div> <!-- /.col-md-4 -->
@@ -167,11 +167,11 @@ http://www.templatemo.com/tm-402-genius
                                                         <div class="icon">
                                                             <!-- <i class="fa fa-flask"></i> -->
                                                         </div>
-                                                        <h4 class="service-title">Categorical Loss History</h4>
+                                                        <h4 class="service-title">DNN performance metrics</h4>
                                                     </div>
                                                 </div>
-                                                <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                    Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.
+                                                <div class="body">DNN Model's metric is mean_absolute_error for readability.
+                                                    Even though the curve is similar to the loss function the measure in this case is real numbers.
                                                 </div>
                                             </div>
                                         </div> <!-- /.col-md-4 -->
@@ -181,21 +181,21 @@ http://www.templatemo.com/tm-402-genius
                                         <div class="col-md-6 col-sm-6 col-xs-6">
                                             <div class="portfolio-item whiteback" style="margin:auto; width:100%; margin-top: 5%;">
                                                 <div class="overlay">
-                                                    <a href="./images/dnn_accuracy_history.png" data-rel="lightbox">
+                                                    <a href="./images/dnn_residual_validation.png" data-rel="lightbox">
                                                         <i class="fa fa-expand"></i>
                                                     </a>
                                                 </div>
-                                                <img src="./images/dnn_accuracy_history.png" alt="Image 4">
+                                                <img src="./images/dnn_residual_validation.png" alt="Image 4">
                                             </div> <!-- /.portfolio-item -->
                                         </div> <!-- /.col-md-4 -->
                                         <div class="col-md-6 col-sm-6 col-xs-6">
                                             <div class="portfolio-item whiteback" style="margin:auto; width:100%; margin-top: 5%;">
                                                 <div class="overlay">
-                                                    <a href="./images/dnn_loss_history.png" data-rel="lightbox">
+                                                    <a href="./images/dnn_predictions.png" data-rel="lightbox">
                                                         <i class="fa fa-expand"></i>
                                                     </a>
                                                 </div>
-                                                <img src="./images/dnn_loss_history.png" alt="Image 5">
+                                                <img src="./images/dnn_predictions.png" alt="Image 5">
                                             </div> <!-- /.portfolio-item -->
                                         </div> <!-- /.col-md-4 -->
                                     </div>
@@ -209,11 +209,11 @@ http://www.templatemo.com/tm-402-genius
                                                         <div class="icon">
                                                             <!-- <i class="fa fa-heart-o"></i> -->
                                                         </div>
-                                                        <h4 class="service-title">DNN Training Accuracy</h4>
+                                                        <h4 class="service-title">DNN Residual Predictions</h4>
                                                     </div>
                                                 </div>
-                                                <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                    Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.
+                                                <div class="body">X-axis: the model's predictions.<br />
+                                                    Y-axis: miss values.
                                                 </div>
                                             </div>
                                         </div> <!-- /.col-md-4 -->
@@ -226,11 +226,11 @@ http://www.templatemo.com/tm-402-genius
                                                         <div class="icon">
                                                             <!-- <i class="fa fa-flask"></i> -->
                                                         </div>
-                                                        <h4 class="service-title">DNN Training Loss</h4>
+                                                        <h4 class="service-title">Predictions against targets</h4>
                                                     </div>
                                                 </div>
-                                                <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                    Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.
+                                                <div class="body">Validation subset sorted on the target values (orange line).
+                                                    Our predictions are aligned with the targets they are supposed to match (blue line).
                                                 </div>
                                             </div>
                                         </div> <!-- /.col-md-4 -->
