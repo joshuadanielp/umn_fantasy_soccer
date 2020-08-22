@@ -1,44 +1,35 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Hello Karim!
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> 
 <![endif]-->
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> 
 <![endif]-->
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
-    <title>MLS Analysis</title>
+    <title>MLS Machine Learning Model</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-<!--
+    <!--
 Genius Template
 http://www.templatemo.com/tm-402-genius
 -->
     <meta name="author" content="templatemo">
     <meta charset="UTF-8">
     <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800' rel='stylesheet' type='text/css'>
-    
+
     <!-- CSS Bootstrap & Custom -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="css/templatemo_misc.css">
     <link rel="stylesheet" href="css/animate.css">
     <link href="css/templatemo_style.css" rel="stylesheet" media="screen">
-    
+
     <!-- Favicons -->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
-    
+
     <!-- JavaScripts -->
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/modernizr.js"></script>
@@ -48,20 +39,25 @@ http://www.templatemo.com/tm-402-genius
         </div>
     <![endif]-->
 </head>
+
 <body>
-    
-    
+
+
     <div class="bg-image"></div>
     <div class="overlay-bg"></div>
 
-    
-    <div class="container language-select visible-md visible-lg">
+
+    <!-- <div class="container language-select visible-md visible-lg">
         <div class="row">
             <div class="col-md-12">
-                
-            </div> <!-- /.col-md-12 -->
-        </div> <!-- /.row -->
-    </div> <!-- /.language-select -->
+                <select name="cat2" id="cat2" class="postform">
+                    <option value="0">-- Language Selection --</option>
+                    <option class="level-0" value="1">English</option>
+                    <option class="level-0" value="2"></option>
+                </select>
+            </div> /.col-md-12 -->
+        <!-- </div> /.row -->
+    <!-- </div> /.language-select --> -->
 
     <!-- This one in here is responsive menu for tablet and mobiles -->
     <div class="responsive-navigation visible-sm visible-xs">
@@ -72,9 +68,9 @@ http://www.templatemo.com/tm-402-genius
             <ul class="main_menu">
                 <li><a class="show-1 homebutton" href="#"><i class="fa fa-home"></i>Homepage</a></li>
                 <li><a class="show-2" href="#"><i class="fa fa-group"></i>About Us</a></li>
-                <li><a class="show-3" href="#"><i class="fa fa-briefcase"></i>Tableau Analaysis</a></li>
+                <li><a class="show-3" href="#"><i class="fa fa-briefcase"></i>Our Gallery</a></li>
                 <!-- <li><a class="show-4" href="#"><i class="fa fa-cogs"></i>Services</a></li> -->
-                <li><a class="show-5" href="#"><i class="fa fa-globe"></i>Contact Us</a></li>
+                <li><a class="show-4" href="#"><i class="fa fa-globe"></i>Contact Us</a></li>
             </ul> <!-- /.main_menu -->
         </div> <!-- /.responsive_menu -->
     </div> <!-- /responsive_navigation -->
@@ -87,11 +83,16 @@ http://www.templatemo.com/tm-402-genius
                 <div class="col-md-2 visible-md visible-lg">
                     <div class="main_menu">
                         <ul class="menu">
-                            <li><a class="show-1 homebutton" href="#" data-toggle="tooltip" data-original-title="Homepage"><i class="fa fa-home"></i></a></li>
-                            <li><a class="show-2" href="#" data-toggle="tooltip" data-original-title="About Us"><i class="fa fa-user"></i></a></li>
-                            <li><a class="show-3" href="#" data-toggle="tooltip" data-original-title="Tableau Analysis"><i class="fa fa-briefcase"></i></a></li>
-                            <!-- <li><a class="show-4" href="#" data-toggle="tooltip" data-original-title="Services"><i class="fa fa-cog"></i></a></li> -->
-                            <li><a class="show-5" href="#" data-toggle="tooltip" data-original-title="Stay In Touch"><i class="fa fa-globe"></i></a></li>
+                            <li><a class="show-1 homebutton" href="#" data-toggle="tooltip"
+                                    data-original-title="Homepage"><i class="fa fa-home"></i></a></li>
+                            <li><a class="show-2" href="#" data-toggle="tooltip" data-original-title="About Us"><i
+                                        class="fa fa-user"></i></a></li>
+                            <li><a class="show-3" href="#" data-toggle="tooltip" data-original-title="Our Gallery"><i
+                                        class="fa fa-briefcase"></i></a></li>
+                            <!-- <li><a class="show-4" href="#" data-toggle="tooltip" data-original-title="Services"><i -->
+                                        <!-- class="fa fa-cog"></i></a></li> -->
+                            <li><a class="show-4" href="#" data-toggle="tooltip" data-original-title="Stay In Touch"><i
+                                        class="fa fa-globe"></i></a></li>
                         </ul>
                     </div> <!-- /.main-menu -->
                 </div> <!-- /.col-md-2 -->
@@ -103,7 +104,8 @@ http://www.templatemo.com/tm-402-genius
                         <div class="col-md-12">
                             <div class="templatemo_logo">
                                 <a href="#">
-                                    <img src="pics/layer1.png" width="100" height="100" alt="MLS Machine Learning Model">
+                                    <img src="./pics/layer1.png" alt="width=" 100 height="100"
+                                        alt="MLS Machine Learning Model">
                                 </a>
                             </div> <!-- /.logo -->
                         </div> <!-- /.col-md-12 -->
@@ -111,9 +113,190 @@ http://www.templatemo.com/tm-402-genius
 
 
                     <div id="menu-container">
-                        
+
                         <div id="menu-1" class="homepage">
-                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <div class="portfolio-item whiteback" style="margin:auto; width:100%;">
+                                                <div class="overlay">
+                                                    <a href="./images/categorical_accuracy_history.png"
+                                                        data-rel="lightbox">
+                                                        <i class="fa fa-expand"></i>
+                                                    </a>
+                                                </div>
+                                                <img src="./images/categorical_accuracy_history.png" alt="Image 1">
+                                            </div> <!-- /.portfolio-item -->
+                                        </div> <!-- /.col-md-4 -->
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <div class="portfolio-item whiteback" style="margin:auto; width:100%;">
+                                                <div class="overlay">
+                                                    <a href="./images/categorical_loss_history.png" data-rel="lightbox">
+                                                        <i class="fa fa-expand"></i>
+                                                    </a>
+                                                </div>
+                                                <img src="./images/categorical_loss_history.png" alt="Image 2">
+                                            </div> <!-- /.portfolio-item -->
+                                        </div> <!-- /.col-md-4 -->
+                                    </div> <!-- /.row -->
+
+                                    <div class="row services">
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="service" style="margin-top:1%;">
+                                                <div class="header">
+                                                    <div class="header-bg"></div>
+                                                    <div class="service-header">
+                                                        <div class="icon">
+                                                            <!-- <i class="fa fa-heart-o"></i> -->
+                                                        </div>
+                                                        <h4 class="service-title">Categorical Accuracy History</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.
+                                                </div>
+                                            </div>
+                                        </div> <!-- /.col-md-4 -->
+                                    
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="service" style="margin-top:1%;">
+                                                <div class="header">
+                                                    <div class="header-bg"></div>
+                                                    <div class="service-header">
+                                                        <div class="icon">
+                                                            <!-- <i class="fa fa-flask"></i> -->
+                                                        </div>
+                                                        <h4 class="service-title">Categorical Loss History</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.
+                                                </div>
+                                            </div>
+                                        </div> <!-- /.col-md-4 -->
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <div class="portfolio-item whiteback" style="margin:auto; width:100%; margin-top: 5%;">
+                                                <div class="overlay">
+                                                    <a href="./images/dnn_accuracy_history.png" data-rel="lightbox">
+                                                        <i class="fa fa-expand"></i>
+                                                    </a>
+                                                </div>
+                                                <img src="./images/dnn_accuracy_history.png" alt="Image 4">
+                                            </div> <!-- /.portfolio-item -->
+                                        </div> <!-- /.col-md-4 -->
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <div class="portfolio-item whiteback" style="margin:auto; width:100%; margin-top: 5%;">
+                                                <div class="overlay">
+                                                    <a href="./images/dnn_loss_history.png" data-rel="lightbox">
+                                                        <i class="fa fa-expand"></i>
+                                                    </a>
+                                                </div>
+                                                <img src="./images/dnn_loss_history.png" alt="Image 5">
+                                            </div> <!-- /.portfolio-item -->
+                                        </div> <!-- /.col-md-4 -->
+                                    </div>
+
+                                    <div class="row services">
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="service" style="margin-top:1%;">
+                                                <div class="header">
+                                                    <div class="header-bg"></div>
+                                                    <div class="service-header">
+                                                        <div class="icon">
+                                                            <!-- <i class="fa fa-heart-o"></i> -->
+                                                        </div>
+                                                        <h4 class="service-title">DNN Training Accuracy</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.
+                                                </div>
+                                            </div>
+                                        </div> <!-- /.col-md-4 -->
+                                    
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="service" style="margin-top:1%;">
+                                                <div class="header">
+                                                    <div class="header-bg"></div>
+                                                    <div class="service-header">
+                                                        <div class="icon">
+                                                            <!-- <i class="fa fa-flask"></i> -->
+                                                        </div>
+                                                        <h4 class="service-title">DNN Training Loss</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.
+                                                </div>
+                                            </div>
+                                        </div> <!-- /.col-md-4 -->
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <div class="portfolio-item whiteback" style="margin:auto; width:100%; margin-top: 5%;">
+                                                <div class="overlay">
+                                                    <a href="./images/linear_residual_training.png" data-rel="lightbox">
+                                                        <i class="fa fa-expand"></i>
+                                                    </a>
+                                                </div>
+                                                <img src="./images/linear_residual_training.png" alt="Image 7">
+                                            </div> <!-- /.portfolio-item -->
+                                        </div> <!-- /.col-md-4 -->
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <div class="portfolio-item whiteback" style="margin:auto; width:100%; margin-top: 5%;">
+                                                <div class="overlay">
+                                                    <a href="./images/linear_residual_validation.png"
+                                                        data-rel="lightbox">
+                                                        <i class="fa fa-expand"></i>
+                                                    </a>
+                                                </div>
+                                                <img src="./images/linear_residual_validation.png" alt="Image 8">
+                                            </div> <!-- /.portfolio-item -->
+                                        </div> <!-- /.col-md-4 -->
+                                    </div>
+                                    <div class="row services">
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="service" class="service" style="margin-top:1%;">
+                                                <div class="header">
+                                                    <div class="header-bg"></div>
+                                                    <div class="service-header">
+                                                        <div class="icon">
+                                                            <!-- <i class="fa fa-heart-o"></i> -->
+                                                        </div>
+                                                        <h4 class="service-title">Linear Residual Training</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.
+                                                </div>
+                                            </div>
+                                        </div> <!-- /.col-md-4 -->
+                                    
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="service" style="margin-top:1%;">
+                                                <div class="header">
+                                                    <div class="header-bg"></div>
+                                                    <div class="service-header">
+                                                        <div class="icon">
+                                                            <!-- <i class="fa fa-flask"></i> -->
+                                                        </div>
+                                                        <h4 class="service-title">Linear Residual Validation</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.
+                                                </div>
+                                            </div>
+                                        </div> <!-- /.col-md-4 -->
+                                    </div>
+                                </div>
+                            </div>
+
                         </div> <!-- /.homepage -->
 
                         <div id="menu-2" class="content about-us">
@@ -124,30 +307,52 @@ http://www.templatemo.com/tm-402-genius
                                 <div class="row">
                                     <div class="col-md-7">
                                         <h3 class="widget-title">What is our goal?</h3>
-                                        <p>Our goal is to have our model predict a teams standing based on the collective players past seasons standings.</p>
-                                        <p>Credit goes to <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for background images used in this template. This layout is based on <a rel="nofollow" href="http://getbootstrap.com">Bootstrap</a> responsive framework. Home and Gallery pages are integrated with <a rel="nofollow" href="https://github.com/duncanmcdougall/Responsive-Lightbox">Responsive Lightbox</a> for images.</p>
+                                        <p>Can we predict the standings (ranking) of a team based on prior player
+                                            experience?
+
+                                            We started with a dataset of seasons 2007 to 2018 of Major League Soccer
+                                            (MLS). The dataset included team-specific data, such as overall standings
+                                            (1st place, 2nd place, etc.), points (55, 53, etc.), wins and losses. It
+                                            also included player-specific data, such as what team they played on each
+                                            year. From this data, we debated what insight we could gain from our
+                                            analysis. We looked at several different options:</p>
+                                        <p> 1. Predicting team standings based on a chosen group of players
+                                            <br>
+                                            2. Predicting the best group of players based on historical performance (an
+                                            “All Star” team)
+                                            <br>
+                                            3. Predicting number of points a team might score based on past performance
+                                        </p>
                                     </div> <!-- /.col-md-7 -->
                                     <div class="col-md-5">
                                         <h3 class="widget-title">Project Composition</h3>
                                         <ul class="progess-bars">
                                             <li>
                                                 <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">Linear Regression 60%</div>
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width: 60%;">Linear
+                                                        Regression 60%</div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 83%;">Deep Learning 83%</div>
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width: 83%;">Deep
+                                                        Learning 83%</div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" style="width: 68%;">Tableau 68%</div>
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="68"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width: 68%;">
+                                                        Tableau 68%</div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 58%;">HTML 58%</div>
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="95"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width: 58%;">HTML
+                                                        58%</div>
                                                 </div>
                                             </li>
                                         </ul>
@@ -168,7 +373,8 @@ http://www.templatemo.com/tm-402-genius
                                                 <div class="member-infos">
                                                     <h4 class="member-name">Mikhail Kryaha</h4>
                                                     <span class="member-role">U of M Bootcamp Student</span>
-                                                    <p class="member-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                    <p class="member-desc">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit.</p>
                                                     <ul class="member-social">
                                                         <li><a href="#" class="fa fa-facebook"></a></li>
                                                         <li><a href="#" class="fa fa-twitter"></a></li>
@@ -186,7 +392,8 @@ http://www.templatemo.com/tm-402-genius
                                                 <div class="member-infos">
                                                     <h4 class="member-name">Josh Peterson</h4>
                                                     <span class="member-role">U of M Bootcamp Student</span>
-                                                    <p class="member-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                    <p class="member-desc">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit.</p>
                                                     <ul class="member-social">
                                                         <li><a href="#" class="fa fa-facebook"></a></li>
                                                         <li><a href="#" class="fa fa-twitter"></a></li>
@@ -204,7 +411,8 @@ http://www.templatemo.com/tm-402-genius
                                                 <div class="member-infos">
                                                     <h4 class="member-name">Karim Darbaki</h4>
                                                     <span class="member-role">U of M Bootcamp Student</span>
-                                                    <p class="member-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                    <p class="member-desc">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit.</p>
                                                     <ul class="member-social">
                                                         <li><a href="#" class="fa fa-facebook"></a></li>
                                                         <li><a href="#" class="fa fa-twitter"></a></li>
@@ -225,14 +433,17 @@ http://www.templatemo.com/tm-402-genius
                             </div> <!-- /.page-header -->
                             <div class="content-inner">
                                 <div class="row">
-                                    <div class="col-md-12"> 
-                                        <div class='tableauPlaceholder' id='viz1597892708376' style='position: relative'><noscript><a href='#'><img alt=' '
+                                    <div class="col-md-12">
+                                        <div class='tableauPlaceholder' id='viz1597892708376'
+                                            style='position: relative'><noscript><a href='#'><img alt=' '
                                                         src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pl&#47;PlayerClubAssignments&#47;PlayerCompensation&#47;1_rss.png'
-                                                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                                style='display:none;'>
                                                 <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                                                 <param name='embed_code_version' value='3' />
                                                 <param name='site_root' value='' />
-                                                <param name='name' value='PlayerClubAssignments&#47;PlayerCompensation' />
+                                                <param name='name'
+                                                    value='PlayerClubAssignments&#47;PlayerCompensation' />
                                                 <param name='tabs' value='no' />
                                                 <param name='toolbar' value='yes' />
                                                 <param name='static_image'
@@ -244,18 +455,19 @@ http://www.templatemo.com/tm-402-genius
                                                 <param name='display_count' value='yes' />
                                                 <param name='language' value='en' />
                                                 <param name='filter' value='publish=yes' /></object></div>
-                                        <script
-                                            type='text/javascript'>                   
-                                             var divElement = document.getElementById('viz1597892708376'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1024px'; vizElement.style.height = '795px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1024px'; vizElement.style.height = '795px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                        <script type='text/javascript'>
+                                            var divElement = document.getElementById('viz1597892708376'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1024px'; vizElement.style.height = '795px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1024px'; vizElement.style.height = '795px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                                     </div>
                                     <br>
                                     <br>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-12 fittableau" > 
-                                        <div class='tableauPlaceholder' id='viz1598041203676' style='position: relative'><noscript><a href='#'><img alt=' '
+                                    <div class="col-md-12 fittableau">
+                                        <div class='tableauPlaceholder' id='viz1598041203676'
+                                            style='position: relative'><noscript><a href='#'><img alt=' '
                                                         src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pl&#47;PlayerClubAssignments&#47;PlayersTeams&#47;1_rss.png'
-                                                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none width:500px; height:600px; overflow:auto;'>
+                                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                                style='display:none; width:600px; height:600px; overflow:auto;'>
                                                 <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                                                 <param name='embed_code_version' value='3' />
                                                 <param name='site_root' value='' />
@@ -273,104 +485,115 @@ http://www.templatemo.com/tm-402-genius
                                                 <param name='filter' value='publish=yes' /></object></div>
                                         <script
                                             type='text/javascript'>                    var divElement = document.getElementById('viz1598041203676'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '927px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-                                        </div>
+                                    </div>
                                 </div>
-                                
+
                             </div> <!-- /.content-inner -->
-                            
+
                         </div> <!-- /.our-gallery -->
-                                </div> <!-- /.row -->
-                                <div class="row services">
-                                    <div class="col-md-4 col-sm-6">
+
+                        <!-- <div id="menu-4" class="content">
+                            <div class="page-header">
+                                <h2 class="page-title">Our Services</h2>
+                            </div>  /.page-header -->
+                            <!-- <div class="content-inner"> -->
+                                <!-- <div class="row">
+                                    <div class="col-md-12">
+                                        <h3 class="widget-title">Web Design and Development</h3>
+                                    </div>  /.col-md-12 -->
+                                <!-- </div> /.row -->
+                                <!-- <div class="row services">
+
+                                    <div class="row services">
+                                    <div class="col-md-6 col-sm-6">
                                         <div class="service">
                                             <div class="header">
                                                 <div class="header-bg"></div>
                                                 <div class="service-header">
                                                     <div class="icon">
-                                                        <!-- <i class="fa fa-heart-o"></i> -->
+                                                        <i class="fa fa-heart-o"></i>
                                                     </div>
                                                     <h4 class="service-title">HTML5 CSS3</h4>
                                                 </div>
                                             </div>
-                                            <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.</div>
-                                        </div>
-                                    </div> <!-- /.col-md-4 -->
-                                    <div class="col-md-4 col-sm-6">
+                                            <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.
+                                            </div> -->
+                                        <!-- </div> --> 
+                                    <!-- </div> /.col-md-4 -->
+                                
+                                    <!-- <div class="col-md-6 col-sm-6">
                                         <div class="service">
                                             <div class="header">
                                                 <div class="header-bg"></div>
                                                 <div class="service-header">
                                                     <div class="icon">
-                                                        <!-- <i class="fa fa-flask"></i> -->
+                                                        <i class="fa fa-flask"></i>
                                                     </div>
                                                     <h4 class="service-title">Web Marketing</h4>
                                                 </div>
                                             </div>
-                                            <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.</div>
-                                        </div>
-                                    </div> <!-- /.col-md-4 -->
-                                    <div class="col-md-4 col-sm-6">
-                                        <div class="service">
-                                            <div class="header">
-                                                <div class="header-bg"></div>
-                                                <div class="service-header">
-                                                    <div class="icon">
-                                                        <!-- <i class="fa fa-money"></i> -->
-                                                    </div>
-                                                    <h4 class="service-title">Cost Effective</h4>
-                                                </div>
+                                            <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. -->
+                                                <!-- Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.
                                             </div>
-                                            <div class="body">Download free <a rel="nofollow" href="http://www.tooplate.com">templates</a> for your websites. Nullam viverra dolor fermentum erat ullamcorper, sit amet mattis nibh tempus.</div>
-                                        </div>
-                                    </div> <!-- /.col-md-4 -->
+                                        </div> -->
+                                    <!-- </div> /.col-md-4 -->
+                                <!-- </div>
+
                                     <div class="col-md-4 col-sm-6">
                                         <div class="service">
                                             <div class="header">
                                                 <div class="header-bg"></div>
                                                 <div class="service-header">
                                                     <div class="icon">
-                                                        <!-- <i class="fa fa-eye"></i> -->
+                                                        <i class="fa fa-eye"></i>
                                                     </div>
                                                     <h4 class="service-title">Retina Ready</h4>
                                                 </div>
                                             </div>
-                                            <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.</div>
-                                        </div>
-                                    </div> <!-- /.col-md-4 -->
-                                    <div class="col-md-4 col-sm-6">
+                                            <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.
+                                            </div>
+                                        </div> -->
+                                    <!-- </div> /.col-md-4 -->
+                                    <!-- <div class="col-md-4 col-sm-6">
                                         <div class="service">
                                             <div class="header">
                                                 <div class="header-bg"></div>
                                                 <div class="service-header">
                                                     <div class="icon">
-                                                        <!-- <i class="fa fa-mobile-phone"></i> -->
+                                                        <i class="fa fa-mobile-phone"></i>
                                                     </div>
                                                     <h4 class="service-title">Responsive</h4>
                                                 </div>
                                             </div>
-                                            <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.</div>
-                                        </div>
-                                    </div> <!-- /.col-md-4 -->
-                                    <div class="col-md-4 col-sm-6">
+                                            <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.
+                                            </div>
+                                        </div> -->
+                                    <!-- </div> /.col-md-4 -->
+                                    <!-- <div class="col-md-4 col-sm-6">
                                         <div class="service">
                                             <div class="header">
                                                 <div class="header-bg"></div>
                                                 <div class="service-header">
                                                     <div class="icon">
-                                                        <!-- <i class="fa fa-cogs"></i> -->
+                                                        <i class="fa fa-cogs"></i>
                                                     </div>
                                                     <h4 class="service-title">Settings</h4>
                                                 </div>
                                             </div>
-                                            <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.</div>
-                                        </div>
-                                    </div> <!-- /.col-md-4 -->
-                                </div> <!-- /.row -->
-                            </div> /.content-inner -->
+                                            <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.
+                                            </div>
+                                        </div> -->
+                                    <!-- </div>  /.col-md-4 -->
+                                <!-- </div> /.row -->
+                            <!-- </div> /.content-inner --> 
 
-                        </div> /.services -->
+                        <!-- </div> /.services --> 
 
-                        <div id="menu-5" class="content">
+                        <div id="menu-4" class="content">
                             <div class="page-header">
                                 <h2 class="page-title">Stay In Touch</h2>
                             </div> <!-- /.page-header -->
@@ -378,7 +601,9 @@ http://www.templatemo.com/tm-402-genius
                                 <div class="row">
                                     <div class="col-md-8">
                                         <h3 class="widget-title">Send a message</h3>
-                                        <p>Feel free to send us a message regarding this Genius HTML5 template. Pellentesque pulvinar, orci vel scelerisque suscipit, libero justo laoreet felis, ac consectetur est nisi quis ligula. Maecenas nec felis elit.</p>
+                                        <p>Feel free to send us a message regarding this Genius HTML5 template.
+                                            Pellentesque pulvinar, orci vel scelerisque suscipit, libero justo laoreet
+                                            felis, ac consectetur est nisi quis ligula. Maecenas nec felis elit.</p>
                                         <div class="row contact-form">
                                             <div class="col-md-4">
                                                 <label for="name-id">Your Name:</label>
@@ -403,9 +628,11 @@ http://www.templatemo.com/tm-402-genius
                                         <div class="information">
                                             <h3 class="widget-title">Information</h3>
                                             <ul class="our-location">
-                                                <li><span><i class="fa fa-map-marker"></i>Address:</span>120 Nullam viverra dolor</li>
+                                                <li><span><i class="fa fa-map-marker"></i>Address:</span>120 Nullam
+                                                    viverra dolor</li>
                                                 <li><span><i class="fa fa-map-marker"></i>Phone:</span>010-020-0210</li>
-                                                <li><span><i class="fa fa-map-marker"></i>Email:</span><a href="mailto:info@company.com">info@company.com</a></li>
+                                                <li><span><i class="fa fa-map-marker"></i>Email:</span><a
+                                                        href="mailto:info@company.com">info@company.com</a></li>
                                             </ul>
                                         </div> <!-- /.information -->
                                         <div class="google-map">
@@ -420,17 +647,18 @@ http://www.templatemo.com/tm-402-genius
                             </div> <!-- /.content-inner -->
 
                         </div> <!-- /.stay-in-touch -->
-                        
+
                         <div class="site-footer">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <p class="copyright-text">Copyright &copy; 2084 Company Name 
+                                    <p class="copyright-text">Copyright &copy; 2084 Company Name
                                     </p>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="social-icons-footer">
                                         <ul>
-                                            <li><a target="_parent" href="http://www.facebook.com/templatemo" class="fa fa-facebook"></a></li>
+                                            <li><a target="_parent" href="http://www.facebook.com/templatemo"
+                                                    class="fa fa-facebook"></a></li>
                                             <li><a href="#" class="fa fa-twitter"></a></li>
                                             <li><a href="#" class="fa fa-linkedin"></a></li>
                                             <li><a href="#" class="fa fa-instagram"></a></li>
@@ -442,7 +670,7 @@ http://www.templatemo.com/tm-402-genius
                         </div> <!-- /.site-footer -->
 
                     </div> <!-- /.content-holder -->
-                
+
                 </div> <!-- /.col-md-10 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->
@@ -456,24 +684,25 @@ http://www.templatemo.com/tm-402-genius
     <script src="js/templatemo_custom.js"></script>
     <script>
         function initialize() {
-          var mapOptions = {
-            zoom: 15,
-            center: new google.maps.LatLng(16.832179,96.134976)
-          };
+            var mapOptions = {
+                zoom: 15,
+                center: new google.maps.LatLng(16.832179, 96.134976)
+            };
 
-          var map = new google.maps.Map(document.getElementById('map-canvas'),
-              mapOptions);
+            var map = new google.maps.Map(document.getElementById('map-canvas'),
+                mapOptions);
         }
 
         function loadScript() {
-          var script = document.createElement('script');
-          script.type = 'text/javascript';
-          script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
-              'callback=initialize';
-          document.body.appendChild(script);
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+                'callback=initialize';
+            document.body.appendChild(script);
         }
 
     </script>
-<!-- templatemo 402 genius -->
+    <!-- templatemo 402 genius -->
 </body>
+
 </html>

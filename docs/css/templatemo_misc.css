@@ -17,6 +17,7 @@
 	border: 5px solid #fff;
 	box-shadow: 0 0 20px #000;
 	border-radius: 1px;
+	background: rgb(146, 146, 146);
 }
 body.blurred > * {
   -webkit-filter: blur(2px);
@@ -93,5 +94,18 @@ body.blurred > * {
 }
 .fittableau {
 	overflow: auto;
+ }
+
+ .whiteback {
+	 background: rgb(97, 97, 97);
+	 padding: 0px;
+	 margin:right;
+ }
+
+ .menu-container {
+	max-width: 100%;
+	margin: auto;
+	background: white;
+	padding: 0px;
  }
  
